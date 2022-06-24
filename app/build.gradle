@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "33.0.0"
+
+    defaultConfig {
+        applicationId "com.android.accessorychat"
+        minSdkVersion 12
+        targetSdkVersion 32
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
